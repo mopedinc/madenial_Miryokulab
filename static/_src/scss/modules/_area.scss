@@ -1,0 +1,73 @@
+/* modules/_area.scss
+-------------------------------------------------- */
+@use "../foundation/import" as get;
+
+
+.m-area {
+
+    &__wrap {
+        @extend %w-content;
+        padding-top: 66px;
+        padding-bottom: 80px;
+    }
+
+    .m-main {
+        &__ttl {
+            width: 724px;
+
+            &-img {
+                & p {
+                    @include get.pc {
+                        font-size: 31px;
+                    }
+
+                    @include get.sp {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__inner {
+        @include get.sp {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+
+
+    &__box {
+        text-align: center;
+
+        & img {
+            max-width: 670px;
+            width: 100%;
+            margin-top: 38px;
+        }
+    }
+
+    @include get.sp {
+        &__wrap {
+            padding-top: 26px;
+            padding-bottom: 34px;
+        }
+
+        .m-main {
+            &__ttl {
+                max-width: 308px;
+                width: 100%;
+            }
+        }
+
+        &__box {
+            & img {
+                width: 96%;
+                margin-top: 10px;
+            }
+        }
+
+    }
+
+
+}

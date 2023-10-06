@@ -1,0 +1,149 @@
+/* modules/_mv.scss
+-------------------------------------------------- */
+@use "../foundation/import" as get;
+
+
+.m-mv {
+    color: #fff;
+
+    @include get.pc {
+        background: url(/assets/img/top/mv-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 985px;
+    }
+
+    @include get.sp {
+        background: url(/assets/img/top/mv-bg-sp.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 255px;
+    }
+
+    &__wrap {
+        @include get.pc {
+            padding-top: 181px;
+            width: 1080px;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: content-box;
+        }
+
+        @include get.sp {
+            padding-top: 32px;
+        }
+    }
+
+    &__box {
+        text-align: center;
+        padding: 0px 10px 20px;
+        box-sizing: border-box;
+        text-shadow: 0 0 10px #000, 0 0 20px #000;
+        margin: 0 auto;
+        border: 2px solid #fff;
+
+        @include get.pc {
+            width: 635px;
+            min-height: 484px;
+        }
+
+        @include get.sp {
+            width: 50%;
+            max-width: 300px;
+            min-width: 190px;
+            min-height: 144px;
+            padding-bottom: 5px;
+            border: 1px solid #fff;
+        }
+
+        & .first-txt {
+            @include get.pc {
+
+                font-size: 26px;
+                line-height: calc(45/26);
+                letter-spacing: 0.01em;
+                margin-top: 31px;
+                width: 80%;
+            }
+
+            @include get.sp {
+                font-size: 10px;
+                line-height: 1;
+                letter-spacing: 0.01em;
+                margin-top: 4px;
+                width: 90%;
+                max-width: 155px;
+            }
+        }
+
+        & .ttl-lead {
+            font-size: 48px;
+            line-height: calc(72/48);
+            letter-spacing: 0.3em;
+            margin-top: 7px;
+
+            @include get.sp {
+                font-size: 14px;
+                line-height: 1.2;
+                margin-top: 5px;
+            }
+        }
+
+        & .site-ttl {
+            font-size: 125px;
+            line-height: calc(66/125);
+            margin-top: 35px;
+            font-weight: 500;
+
+            @include get.sp {
+                font-size: 37px;
+                margin-top: 10px;
+            }
+
+            & span {
+                font-size: 83px;
+                display: block;
+
+                @include get.sp {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        & .end-txt {
+            font-size: 32px;
+            line-height: calc(23/32);
+            letter-spacing: 0.025em;
+            margin-top: 60px;
+            width: 80%;
+
+            @include get.sp {
+                font-size: 10px;
+                margin-top: 16px;
+                width: 88%;
+                max-width: 155px;
+            }
+        }
+
+    }
+
+    & .m-mv__lead {
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;
+
+        @include get.pc {
+            font-size: 30px;
+            margin-top: 47px;
+        }
+
+        @include get.sp {
+            font-size: 12px;
+            margin-top: 15px;
+        }
+    }
+
+
+}

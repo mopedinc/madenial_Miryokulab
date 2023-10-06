@@ -1,0 +1,16 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Mixins _Base
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@use "var" as var;
+
+@mixin pc {
+  @media screen and (min-width: #{var.$break+1}px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: #{var.$break}px) {
+    @content;
+  }
+}

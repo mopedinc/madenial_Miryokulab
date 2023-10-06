@@ -1,0 +1,33 @@
+/* global/_footer.scss
+-------------------------------------------------- */
+@use "../foundation/import" as get;
+
+.g-footer {
+    &__wrap {
+        color: #333;
+        font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
+        text-align: center;
+        font-size: 12px;
+
+        @include get.pc {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__copy {
+        & span {
+            color: #666666;
+            border-bottom: dotted;
+            border-color: #666666;
+            border-width: 1px;
+        }
+    }
+
+    @include get.sp {
+        font-size: 10px;
+        padding: 0 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}

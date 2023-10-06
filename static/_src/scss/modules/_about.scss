@@ -1,0 +1,60 @@
+/* modules/_about.scss
+-------------------------------------------------- */
+@use "../foundation/import" as get;
+
+
+.m-about {
+    background: rgba(255, 255, 255, 0.8);
+
+    &__wrap {
+        @extend %w-content;
+        padding-top: 66px;
+        padding-bottom: 80px;
+    }
+
+    .m-main {
+        &__ttl {
+            width: 724px;
+        }
+    }
+
+    &__inner {
+        @include get.sp {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+
+
+    &__box {
+        text-align: center;
+
+        & img {
+            max-width: 947px;
+            width: 100%;
+            margin-top: 45px;
+        }
+    }
+
+    @include get.sp {
+        &__wrap {
+            padding-top: 27px;
+            padding-bottom: 35px;
+        }
+
+        .m-main {
+            &__ttl {
+                width: 308px;
+            }
+        }
+
+        &__box {
+            & img {
+                width: 100%;
+                margin-top: 26px;
+            }
+        }
+
+    }
+
+}

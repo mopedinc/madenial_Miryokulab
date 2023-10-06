@@ -1,0 +1,88 @@
+/* modules/_contact.scss
+-------------------------------------------------- */
+@use "../foundation/import" as get;
+
+
+.m-contact {
+
+    &__wrap {
+        @extend %w-content;
+        padding-top: 64px;
+        padding-bottom: 63px;
+    }
+
+    .m-main {
+        &__ttl {
+            width: 724px;
+
+            & h2 {
+                font-size: 39px;
+            }
+        }
+
+    }
+
+    &__box {
+        text-align: center;
+    }
+
+    &__ttl {
+        font-size: 28px;
+        font-weight: 500;
+        margin-top: 40px;
+    }
+
+    &__txt {
+        font-size: 20px;
+        margin-top: 8px;
+
+        & span {
+            font-size: 16px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: space-around;
+        font-size: 28px;
+        margin-top: 31px;
+    }
+
+    @include get.sp {
+        &__wrap {
+            padding-top: 19px;
+            padding-bottom: 25px;
+        }
+
+        .m-main {
+            &__ttl {
+                width: 175px;
+
+                & h2 {
+                    font-size: 19px;
+                }
+            }
+        }
+
+        &__ttl {
+            font-size: 19px;
+            margin-top: 26px;
+        }
+
+        &__txt {
+            font-size: 14px;
+            margin-top: 2px;
+
+            & span {
+                font-size: 11px;
+            }
+        }
+
+        &__link {
+            font-size: 16px;
+            margin-top: 8px;
+            text-align: left;
+            display: inline-block;
+        }
+    }
+}

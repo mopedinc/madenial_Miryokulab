@@ -1,0 +1,13 @@
+
+@use "import" as get;
+
+
+@include get.pc {
+    a {
+        transition: 0.3s;
+        &:hover{
+            opacity: 0.6;
+        }
+    
+    }
+}

@@ -1,0 +1,105 @@
+/* patches/_p-cultural.scss
+-------------------------------------------------- */
+@use "../foundation/import" as get;
+
+.p-cultural {
+    @include get.pc {
+
+        & .g-haeder {
+            &__wrap {
+                min-height: 120px;
+                position: static;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            &__spttl {
+                line-height: 0.8;
+                margin-left: 48px;
+
+                & h2 {
+                    font-size: 35px;
+                    font-weight: 500;
+                }
+
+                & p {
+                    font-size: 24px;
+                }
+            }
+
+            & ul {
+                text-shadow: none;
+            }
+
+            & a {
+                color: #5C3740;
+            }
+        }
+    }
+
+    .m-cultural-container__pc {
+
+        @include get.pc {
+            max-width: 980px;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: content-box;
+            background: rgba(255, 255, 255, 0.65);
+        }
+    }
+
+    .m-cultural-container__sp {
+        @include get.sp {
+            max-width: 980px;
+            width: 100%;
+            // padding-left: ;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 5%;
+            padding-right: 5%;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.65);
+        }
+
+    }
+
+    .m-main {
+        &__inner {
+            @include get.pc {
+                padding: unset;
+                width: 820px;
+                margin: 0 auto;
+            }
+
+            @include get.sp {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+
+        &__ttl {
+            & h2 {
+                @include get.sp {
+                    font-size: 17px;
+                }
+            }
+
+            &-img {
+
+                & p {
+                    @include get.pc {
+
+                        font-size: 30px;
+                    }
+
+                    @include get.sp {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

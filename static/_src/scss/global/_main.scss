@@ -1,0 +1,156 @@
+/* global/_main.scss
+-------------------------------------------------- */
+@use "../foundation/import" as get;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #5C3740;
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+
+a {
+    text-decoration: none;
+    color: #5C3740;
+}
+
+@include get.pc {
+    .pc {
+        display: block;
+    }
+
+    .sp {
+        display: none;
+    }
+}
+
+@include get.sp {
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+}
+
+.m-main {
+
+    @include get.pc {
+        background: url(/assets/img/top/page-bg.jpg);
+        background-size: cover;
+        min-width: 1080px;
+
+    }
+
+    @include get.sp {
+        background: url(/assets/img/top/page-bg-sp.jpg);
+        background-size: cover;
+    }
+
+    &__ttl {
+        width: 724px;
+        margin: 0 auto;
+
+        @include get.sp {
+            width: 308px;
+        }
+
+        &-img {
+            display: flex;
+            align-items: center;
+
+            &::before {
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: #5C3740;
+            }
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: #5C3740;
+            }
+
+        }
+
+        & p {
+            font-size: 46px;
+            padding: 0 50px;
+            padding-bottom: 10px;
+            line-height: 1;
+            white-space: nowrap;
+
+            @include get.sp {
+                font-size: 20px;
+                padding: 0 16px;
+                white-space: nowrap;
+            }
+        }
+
+        & h2 {
+            text-align: center;
+            border-bottom: 1px solid #5C3740;
+            font-weight: 500;
+
+            @include get.sp {
+                border-bottom: 1px solid #5C3740;
+            }
+
+            @include get.pc {
+                font-size: 54px;
+                margin-top: 17px;
+                padding-bottom: 35px;
+            }
+
+            @include get.sp {
+                font-size: 22px;
+                margin-top: 12px;
+                padding-bottom: 12px;
+            }
+        }
+    }
+
+    &__txt {
+        & p {
+            text-align: center;
+            font-size: 21px;
+            margin-top: 47px;
+            line-height: 2;
+
+            @include get.sp {
+                font-size: 13px;
+                line-height: calc(20/13);
+                margin-top: 25px;
+            }
+        }
+    }
+
+    &__inner {
+        @include get.pc {
+            padding: 0 20px;
+        }
+    }
+
+    &__boxs {
+        margin: 0 auto;
+
+        @include get.pc {
+            max-width: 970px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @include get.sp {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}

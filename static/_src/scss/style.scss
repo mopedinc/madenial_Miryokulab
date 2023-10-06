@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+// ==========================================================================
+// Foundation
+// - リセットやベースのcssなど
+// ==========================================================================
+@use "foundation/ress";
+@use "foundation/mixins";
+@use "foundation/var";
+@use "foundation/base";
+
+
+// [Global]
+// ・サイト全体で使用する要素など
+@use 'global/main';
+@use 'global/header';
+@use 'global/footer';
+
+// [modules]
+// ・ページ単位の記述や Modules で設定したものと個別に違う場合など
+// top
+@use 'modules/mv';
+@use 'modules/news';
+@use 'modules/cultural';
+@use 'modules/support';
+@use 'modules/magazine';
+@use 'modules/about';
+@use 'modules/area';
+@use 'modules/registration';
+@use 'modules/contact';
+// cultural
+@use 'modules/cultural-sitettl';
+@use 'modules/cultural-mv';
+@use 'modules/cultural-about';
+@use 'modules/cultural-howto';
+@use 'modules/cultural-problem';
+@use 'modules/cultural-connection';
+@use 'modules/cultural-other';
+
+// [patches]
+// top
+@use 'patches/top';
+// p-cultural
+@use 'patches/p-cultural';

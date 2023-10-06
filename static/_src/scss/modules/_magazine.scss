@@ -1,0 +1,98 @@
+/* modules/_magazine.scss
+-------------------------------------------------- */
+@use "../foundation/import" as get;
+
+
+.m-magazine {
+    &__wrap {
+        @extend %w-content;
+        padding-top: 61px;
+        padding-bottom: 86px;
+    }
+
+    .m-main {
+        &__ttl {
+            width: 724px;
+        }
+    }
+
+    &__inner {
+        @include get.sp {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+
+
+    &__boxs {
+        margin-top: 60px;
+    }
+
+    &__box {
+        width: 251px;
+        text-align: center;
+
+        & img {
+            width: 251px;
+            box-shadow: 3px 3px 4px #777;
+        }
+    }
+
+    &__txt {
+        font-size: 18px;
+        margin-top: 17px;
+    }
+
+    &__ttl {
+        font-size: 26px;
+        margin-top: 5px;
+        font-weight: 600;
+    }
+
+    &__date {
+        font-size: 16px;
+        margin-top: 9px;
+    }
+
+    @include get.sp {
+        &__wrap {
+            padding-top: 27px;
+            padding-bottom: 10px;
+        }
+
+        .m-main {
+            &__ttl {
+                width: 308px;
+            }
+        }
+
+        &__boxs {
+            margin-top: 30px;
+        }
+
+        &__box {
+            width: 46%;
+            text-align: center;
+            margin-bottom: 26px;
+
+            & img {
+                width: 90%;
+            }
+        }
+
+        &__txt {
+            font-size: 12px;
+            margin-top: 2px;
+        }
+
+        &__ttl {
+            font-size: 17px;
+            margin-top: 0px;
+        }
+
+        &__date {
+            margin-top: 2px;
+            font-size: 10px;
+        }
+    }
+}

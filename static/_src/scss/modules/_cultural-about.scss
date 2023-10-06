@@ -1,0 +1,60 @@
+/* modules/_cultural-about.scss
+-------------------------------------------------- */
+@use "../foundation/import" as get;
+
+
+.m-cultural-about {
+    &__wrap {
+        padding-bottom: 80px;
+
+        @include get.pc {
+            padding-top: 72px;
+        }
+
+        @include get.sp {
+            padding: 0 3%;
+            padding-top: 16px;
+        }
+
+    }
+
+    .m-main {
+        &__ttl {
+            @include get.pc {
+                width: 553px;
+            }
+
+
+            & h2 {
+                @include get.pc {
+                    font-size: 36px;
+                }
+            }
+
+        }
+
+    }
+
+    &__inner {
+        @include get.sp {}
+    }
+
+    &__boxs {
+        font-size: 24px;
+        margin-top: 52px;
+        line-height: 1.8;
+
+        @include get.sp {
+            margin-top: 15px;
+        }
+
+        & p {
+            @include get.sp {
+                font-size: 15px;
+                letter-spacing: 0.13em;
+                line-height: 1.42;
+            }
+        }
+
+    }
+}

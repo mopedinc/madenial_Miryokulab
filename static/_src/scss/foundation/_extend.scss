@@ -1,0 +1,47 @@
+/* foundation/_extend.scss
+-------------------------------------------------- */
+@use "mixins" as get;
+
+// ContentsWidth
+%w-content {
+  @include get.pc {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: content-box;
+  }
+
+  @include get.sp {
+    max-width: 1080px;
+    width: 100%;
+    // padding-left: ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+
+  }
+}
+
+%w-content2 {
+  @include get.pc {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: content-box;
+  }
+
+  @include get.sp {
+    max-width: 980px;
+    width: 100%;
+    // padding-left: ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+
+  }
+
+}

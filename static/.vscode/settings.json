@@ -1,0 +1,13 @@
+{
+  "git.ignoreLimitWarning": true,
+  "liveSassCompile.settings.forceBaseDirectory": "/_src",
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/dist/assets/css"
+    }
+  ],
+  "dartsass.targetDirectory": "dist/assets/css/",
+  "dartsass.outputFormat": "cssonly"
+}

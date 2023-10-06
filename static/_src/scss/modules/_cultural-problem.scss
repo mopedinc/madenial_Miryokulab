@@ -1,0 +1,49 @@
+/* modules/_cultural-problem.scss
+-------------------------------------------------- */
+@use "../foundation/import" as get;
+
+
+.m-cultural-problem {
+    &__wrap {
+        padding-top: 27px;
+        padding-bottom: 80px;
+
+        @include get.sp {
+            padding: 0 3%;
+            padding-top: 27px;
+            padding-bottom: 40px;
+
+        }
+    }
+
+    .m-main {
+        &__ttl {
+            @include get.pc {
+                width: 560px;
+
+            }
+
+            & h2 {
+                font-size: 36px;
+            }
+        }
+    }
+
+    &__boxs {
+        margin-top: 52px;
+        line-height: 1.7;
+
+        @include get.pc {
+            font-size: 24px;
+            line-height: 1.8;
+            margin-top: 56px;
+        }
+
+        @include get.sp {
+            font-size: 15px;
+            margin-top: 14px;
+        }
+
+    }
+
+}

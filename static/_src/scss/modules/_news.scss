@@ -1,0 +1,225 @@
+/* modules/_news.scss
+-------------------------------------------------- */
+@use "../foundation/import" as get;
+
+
+.m-news {
+    &__wrap {
+        @extend %w-content;
+        text-align: center;
+        margin: 0 auto;
+
+        @include get.pc {
+            padding-top: 51px;
+        }
+
+        @include get.sp {
+            width: 100%;
+            padding-top: 47px;
+            padding-bottom: 0px;
+        }
+
+        & .m-main__ttl {
+            margin-top: -28px;
+            display: inline-block;
+            text-align: center;
+
+            @include get.sp {
+                margin-top: -10px;
+            }
+        }
+    }
+
+    &__inner {
+        @include get.pc {
+            padding: 0 20px;
+            margin-top: 100px;
+            padding-bottom: 70px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        @include get.sp {
+            background: rgba(255, 255, 255, 0.8);
+            padding-bottom: 30px;
+            max-width: 500px;
+            margin: 0 auto;
+
+        }
+    }
+
+    &__boxs {
+        margin-top: 73px;
+
+        @include get.sp {
+            padding-left: 4%;
+            padding-right: 4%;
+            margin-top: 30px;
+            width: 100%;
+            display: block;
+        }
+
+        &>div {
+            width: 100%;
+            text-align: left;
+
+            @include get.pc {
+                margin: 0 20px;
+                max-width: 251px;
+            }
+
+            @include get.sp {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin-bottom: 18px;
+            }
+
+            & div {
+                @include get.sp {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        & a {
+            @include get.sp {
+                width: 24%;
+                height: 100%;
+                margin-right: 13px;
+                object-fit: contain;
+            }
+
+        }
+
+        & img {
+            box-shadow: 3px 3px 4px #B9B9B9;
+
+            @include get.pc {
+                max-width: 251px;
+                width: 100%;
+            }
+
+            @include get.sp {
+                width: 100%;
+            }
+        }
+
+        & h2 {
+
+            @include get.pc {
+                font-size: 16px;
+                margin-top: 6px;
+            }
+
+            @include get.sp {
+                font-size: 13px;
+                margin-top: 0px;
+            }
+        }
+
+        & span {
+            font-size: 13px;
+
+            @include get.pc {
+                font-feature-settings: "palt";
+            }
+
+        }
+
+        & p {
+            vertical-align: middle;
+            display: block;
+
+            @include get.pc {
+                font-size: 16px;
+                margin-top: 5px;
+                font-feature-settings: "palt";
+
+            }
+
+            @include get.sp {
+                font-size: 13px;
+                margin-top: 2px;
+            }
+
+            &::before {
+                content: "";
+                background-image: url(/assets/img/top/news-icon.svg);
+                width: 12px;
+                display: inline-block;
+                height: 18px;
+                background-size: contain;
+                margin-right: 5px;
+                margin-bottom: 4px;
+
+                @include get.sp {
+                    width: 10px;
+                    height: 14px;
+                }
+            }
+        }
+
+        & h2 {
+            line-height: 1;
+
+            @include get.pc {
+                font-size: 25px;
+                margin-top: 11px;
+            }
+
+            @include get.sp {
+                font-size: 18px;
+                margin-top: 6px;
+            }
+
+            & small {
+                @include get.pc {
+                    font-size: 18px;
+                }
+
+                @include get.sp {
+                    font-size: 13px;
+                }
+            }
+        }
+
+    }
+
+    // &__box {
+
+
+    // }
+
+    // &__txt {
+    //     @include get.sp {
+    //         width: 100%;
+    //     }
+    // }
+
+
+
+
+
+    &__btn {
+        font-family: '小塚ゴシック Pro', 'Kozuka Gothic Pro', sans-serif;
+        display: flex;
+        width: 480px;
+        height: 53px;
+        align-items: center;
+        justify-content: center;
+        background-color: #E2A9A1;
+        color: #FFFFFF;
+        font-size: 24px;
+        margin: 0 auto;
+        margin-top: 68px;
+        box-shadow: 3px 3px 4px #B9B9B9;
+
+        @include get.sp {
+            width: 86%;
+            font-size: 14px;
+            height: 32px;
+            margin-top: 30px;
+        }
+    }
+}

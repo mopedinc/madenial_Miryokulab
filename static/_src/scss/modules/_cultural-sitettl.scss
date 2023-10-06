@@ -1,0 +1,59 @@
+/* modules/_cultural-sitettl.scss
+-------------------------------------------------- */
+@use "../foundation/import" as get;
+
+
+.m-cultural-sitettl {
+    text-align: center;
+
+    @include get.pc {
+        padding-top: 67px;
+    }
+
+    @include get.sp {
+        padding-top: 19px;
+    }
+
+    & h2 {
+        font-weight: 500;
+        border-bottom: 1px solid #5C3740;
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+        @include get.pc {
+            font-size: 27px;
+            width: 544px;
+            padding-bottom: 19px;
+        }
+
+        @include get.sp {
+            font-size: 12px;
+            width: 49%;
+            padding-bottom: 5px;
+            margin-bottom: 8px;
+        }
+    }
+
+    & h1 {
+        font-weight: 600;
+
+        @include get.pc {
+            font-size: 60px;
+        }
+
+        @include get.sp {
+            font-size: 22px;
+        }
+    }
+
+    & p {
+        @include get.pc {
+            font-size: 35px;
+            margin-top: -5px;
+        }
+
+        @include get.sp {
+            font-size: 13px;
+        }
+    }
+}
