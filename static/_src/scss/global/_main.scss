@@ -39,14 +39,14 @@ a {
 .m-main {
 
     @include get.pc {
-        background: url(/assets/img/top/page-bg.jpg);
+        background: url(../img/top/page-bg.jpg);
         background-size: cover;
         min-width: 1080px;
 
     }
 
     @include get.sp {
-        background: url(/assets/img/top/page-bg-sp.jpg);
+        background: url(../img/top/page-bg-sp.jpg);
         background-size: cover;
     }
 

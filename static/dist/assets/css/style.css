@@ -396,14 +396,14 @@ a {
 }
 @media screen and (min-width: 769px) {
   .m-main {
-    background: url(/assets/img/top/page-bg.jpg);
+    background: url(../img/top/page-bg.jpg);
     background-size: cover;
     min-width: 1080px;
   }
 }
 @media screen and (max-width: 768px) {
   .m-main {
-    background: url(/assets/img/top/page-bg-sp.jpg);
+    background: url(../img/top/page-bg-sp.jpg);
     background-size: cover;
   }
 }
@@ -767,7 +767,7 @@ a {
 }
 @media screen and (min-width: 769px) {
   .m-mv {
-    background: url(/assets/img/top/mv-bg.jpg);
+    background: url(../img/top/mv-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -776,7 +776,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .m-mv {
-    background: url(/assets/img/top/mv-bg-sp.jpg);
+    background: url(../img/top/mv-bg-sp.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1057,7 +1057,7 @@ a {
 }
 .m-news__boxs p::before {
   content: "";
-  background-image: url(/assets/img/top/news-icon.svg);
+  background-image: url(../img/top/news-icon.svg);
   width: 12px;
   display: inline-block;
   height: 18px;
@@ -1158,11 +1158,27 @@ a {
 @media screen and (min-width: 769px) {
   .m-cultural__boxs {
     margin-top: 60px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .m-cultural__boxs::after {
+    content: "";
+    display: block;
+    max-width: 260px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
   .m-cultural__boxs {
     margin-top: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .m-cultural__boxs::after {
+    content: "";
+    display: block;
+    max-width: 260px;
+    width: 46%;
   }
 }
 .m-cultural__box {
@@ -1187,11 +1203,18 @@ a {
 @media screen and (min-width: 769px) {
   .m-cultural__box img {
     width: 100%;
+    height: 179px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media screen and (max-width: 768px) {
   .m-cultural__box img {
     width: 90%;
+    height: 25.6vw;
+    max-height: 142px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .m-cultural__ttl {
@@ -1224,6 +1247,7 @@ a {
 }
 .m-cultural__txts {
   margin-bottom: 20px;
+  word-wrap: break-word;
 }
 @media screen and (max-width: 768px) {
   .m-cultural__txts {
@@ -1594,7 +1618,7 @@ a {
 }
 .m-registration__box a div::after {
   content: "";
-  background-image: url(/assets/img/top/registration-arrow.svg);
+  background-image: url(../img/top/registration-arrow.svg);
   width: 17px;
   height: 25px;
   margin-left: 10px;
@@ -2158,7 +2182,7 @@ a {
 }
 .m-cultural-connection__link a::after {
   content: "";
-  background-image: url(/assets/img/cultural/cultural-connection-arrow.svg);
+  background-image: url(../img/cultural/cultural-connection-arrow.svg);
   display: inline-block;
   vertical-align: sub;
 }

@@ -7,7 +7,7 @@
     color: #fff;
 
     @include get.pc {
-        background: url(/assets/img/top/mv-bg.jpg);
+        background: url(../img/top/mv-bg.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -15,7 +15,7 @@
     }
 
     @include get.sp {
-        background: url(/assets/img/top/mv-bg-sp.jpg);
+        background: url(../img/top/mv-bg-sp.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
