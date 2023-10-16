@@ -144,13 +144,9 @@ $movie = SCF::get('cultural-movie');
                     </div>
                     <div class="m-cultural-howto__boxs">
                         <ul>
-                            <?php
-                            /*  $activity = SCF::get('cultural-activity');
-                                foreach ($activity as $fields) { 
-                            ?>
+                            <?php $activity = SCF::get('cultural-activity'); foreach ($activity as $fields) { ?>
                             <li>● <?php echo $fields['cultural-activity-txt']; ?></li>                             
-                            <?php }  */
-                            ?>
+                            <?php } ?>
                         </ul>
                     </div>
                     </div>
@@ -167,13 +163,9 @@ $movie = SCF::get('cultural-movie');
                     </div>
                     <div class="m-cultural-problem__boxs">
                         <ul>
-                        <?php
-                                /* $assignment = SCF::get('cultural-assignment');
-                                foreach ($assignment as $fields) { 
-                            ?>
-                            <li>● <?php echo $fields['cultural-assignment-txt']; ?></li>                             
-                            <?php } */
-                        ?>
+                            <?php $assignment = SCF::get('cultural-assignment'); foreach ($assignment as $fields) { ?>
+                                <li>● <?php echo $fields['cultural-assignment-txt']; ?></li>                             
+                            <?php } ?>
                         </ul>
                     </div>
                     </div>
