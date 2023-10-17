@@ -122,6 +122,7 @@
             text-align: center;
             line-height: 1.2;
             font-feature-settings: "palt";
+            overflow-wrap: break-word;
 
             @include get.pc {
                 min-width: 200px;

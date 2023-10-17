@@ -1125,6 +1125,21 @@ a {
     margin-top: 30px;
   }
 }
+.m-news__btn::after {
+  content: "";
+  background-image: url(../img/top/registration-arrow.svg);
+  width: 17px;
+  height: 25px;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: super;
+}
+@media screen and (max-width: 768px) {
+  .m-news__btn::after {
+    width: 12px;
+    height: 15px;
+  }
+}
 
 /* modules/_cultural.scss
 -------------------------------------------------- */
@@ -1942,6 +1957,7 @@ a {
   line-height: 1.2;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
+  overflow-wrap: break-word;
 }
 @media screen and (min-width: 769px) {
   .m-cultural-mv__name-eg {
