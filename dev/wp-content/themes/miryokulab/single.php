@@ -17,7 +17,7 @@ $movie = SCF::get('cultural-movie');
         <div class="m-lab__wrap">
         <header class="g-haeder">
             <div class="g-haeder__wrap pc">
-            <a href="/">
+            <a href="<?php echo home_url('/'); ?>">
                 <div class="g-haeder__spttl">
                 <h2>地域と文化の魅力ラボ</h2><br>
                 <p>Regional and cultural charm lab</p>
