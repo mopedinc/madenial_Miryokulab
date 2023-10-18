@@ -7,6 +7,8 @@ $area = SCF::get('cultural-area');
 $area_en = SCF::get('cultural-area-en');
 $manager = SCF::get('cultural-manager');
 $manager_en = SCF::get('cultural-manager-en');
+$assignment = SCF::get('cultural-assignment-txt');
+$activity = SCF::get('cultural-activity-txt');
 $movie = SCF::get('cultural-movie');
 ?>
 
@@ -144,8 +146,8 @@ $movie = SCF::get('cultural-movie');
                     </div>
                     <div class="m-cultural-howto__boxs">
                         <ul>
-                            <?php $activity = SCF::get('cultural-activity'); foreach ($activity as $fields) { ?>
-                            <li>● <?php echo $fields['cultural-activity-txt']; ?></li>                             
+                            <?php if( !empty( $activity )){ ?>
+                            <?php echo $activity ?>
                             <?php } ?>
                         </ul>
                     </div>
@@ -163,8 +165,8 @@ $movie = SCF::get('cultural-movie');
                     </div>
                     <div class="m-cultural-problem__boxs">
                         <ul>
-                            <?php $assignment = SCF::get('cultural-assignment'); foreach ($assignment as $fields) { ?>
-                                <li>● <?php echo $fields['cultural-assignment-txt']; ?></li>                             
+                            <?php if( !empty( $assignment )){ ?>
+                            <?php echo $assignment ?>
                             <?php } ?>
                         </ul>
                     </div>
@@ -174,12 +176,10 @@ $movie = SCF::get('cultural-movie');
                 <div class="m-cultural-connection">
                 <div class="m-cultural-connection__wrap">
                     <div class="m-cultural-connection__inner m-main__inner">
-                    <h3 class="m-cultural-connection__raed">関連リンク</h3>
-                    <div class="m-cultural-connection__youtube">
-                        <?php if( !empty( $movie )){ ?>
-                        <?php echo $movie ?>
-                        <?php } ?>
-                    </div>
+                    <?php if( !empty( $movie )){ ?>
+                    <?php echo '<h3 class="m-cultural-connection__raed">関連リンク</h3><div class="m-cultural-connection__youtube">' .$movie. '</div>'?>
+                    
+                    <?php } ?>
                     <?php $link = SCF::get('cultural-link'); foreach ($link as $fields): ?>
                     <div class="m-cultural-connection__link">
                         <a target="_blank" href="<?php echo $fields['cultural-link-url']; ?>"><?php echo $fields['cultural-link-heading']; ?></a>    
