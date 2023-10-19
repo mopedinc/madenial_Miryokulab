@@ -147,7 +147,7 @@ $movie = SCF::get('cultural-movie');
                     <div class="m-cultural-howto__boxs">
                         <ul>
                             <?php if( !empty( $activity )){ ?>
-                            <?php echo $activity ?>
+                            <?php echo nl2br( $activity ); ?>
                             <?php } ?>
                         </ul>
                     </div>
@@ -166,7 +166,7 @@ $movie = SCF::get('cultural-movie');
                     <div class="m-cultural-problem__boxs">
                         <ul>
                             <?php if( !empty( $assignment )){ ?>
-                            <?php echo $assignment ?>
+                            <?php echo nl2br( $assignment ); ?>
                             <?php } ?>
                         </ul>
                     </div>
