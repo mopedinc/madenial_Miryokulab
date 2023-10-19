@@ -42,4 +42,25 @@ function Include_my_php($params = array()) {
 }
 add_shortcode('myphp', 'Include_my_php');
 
+
+// カスタム投稿タイプ設定
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+  register_post_type( 'magazine',
+    array(
+        'labels' => array(
+        'name' => __( 'マガジン' ),
+        'singular_name' => __( 'マガジン' )
+      ),
+      'public' => true,
+      'publicly_queryable' => true,
+      'show_ui' => true,
+      'has_archive' => true,
+      'menu_position' =>5,
+      'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions' ),
+    )
+  );
+}
+
 ?>
+
