@@ -1203,6 +1203,7 @@ a {
 @media screen and (min-width: 769px) {
   .m-cultural__box {
     max-width: 260px;
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 768px) {
